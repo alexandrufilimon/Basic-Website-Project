@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/responsive_menu.css">
+	<link rel="stylesheet" type="text/css" href="css/galerie.css">
+	<link rel="stylesheet" type="text/css" href="css/backgroundvid.css">
+	<link rel="icon" href="favicon.ico">
+	<meta charset="UTF-8">
+	<title>Fabrika - Galerie</title>
+</head>
+
+<body>
+	<div id='cssmenu'>
+<ul>
+   <li><a href='index.html'><span>Acasă</span></a></li>
+   <li><a href='galerie.html'><span>Galerie</span></a></li>
+   <li class='active has-sub'><a href=''><span>Meniu</span></a>
+			<ul>
+				<li><a href='oferte.html'><span>Oferte</span></a></li>
+			</ul>
+   <li><a href='contact.html'><span>Contact</span></a></li>
+   <li><a href='inregistrare.php'><span>Înregistrare</span></a></li>
+   <li class='last'>
+			<form action="sistemlogare/login.inc.php" method="POST">
+				<input type="text" name="username" placeholder="Username">
+				<input type="password" name="parola" placeholder="Parola">
+				<button type="submit" name="submit">Logare</button>
+			</form>
+			</li>
+</ul>
+	</div>
+
+<!-- Galeria foto -->
+<div class="row"> 
+  <div class="column">
+    <img src="galerie/poza1.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(1)" class="hover-blur">
+    <img src="galerie/poza2.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(2)" class="hover-blur">
+    <img src="galerie/poza3.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(3)" class="hover-blur">
+    <img src="galerie/poza4.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(4)" class="hover-blur">
+	<img src="galerie/poza5.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(5)" class="hover-blur">
+  </div>
+  <div class="column">
+	<img src="galerie/poza6.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(6)" class="hover-blur">
+    <img src="galerie/poza7.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(7)" class="hover-blur">
+	<img src="galerie/poza8.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(8)" class="hover-blur">
+	<img src="galerie/poza9.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(9)" class="hover-blur">
+	<img src="galerie/poza10.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(10)" class="hover-blur">
+  </div>
+    <div class="column">
+	<img src="galerie/poza11.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(11)" class="hover-blur">
+    <img src="galerie/poza12.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(12)" class="hover-blur">
+	<img src="galerie/poza13.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(13)" class="hover-blur">
+	<img src="galerie/poza14.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(14)" class="hover-blur">
+	<img src="galerie/poza15.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(15)" class="hover-blur">
+  </div>
+    <div class="column">
+	<img src="galerie/poza16.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(16)" class="hover-blur">
+    <img src="galerie/poza17.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(17)" class="hover-blur">
+	<img src="galerie/poza18.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(18)" class="hover-blur">
+	<img src="galerie/poza19.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(19)" class="hover-blur">
+	<img src="galerie/poza20.jpg" style="width:100%" title="Click pentru a vizualiza" onclick="openModal();currentSlide(20)" class="hover-blur">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 20</div>
+      <img src="galerie/poza1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 20</div>
+      <img src="galerie/poza2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 20</div>
+      <img src="galerie/poza3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 20</div>
+      <img src="galerie/poza4.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">5 / 20</div>
+      <img src="galerie/poza5.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">6 / 20</div>
+      <img src="galerie/poza6.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">7 / 20</div>
+      <img src="galerie/poza7.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">8 / 20</div>
+      <img src="galerie/poza8.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">9 / 20</div>
+      <img src="galerie/poza9.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">10 / 20</div>
+      <img src="galerie/poza10.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">11 / 20</div>
+      <img src="galerie/poza11.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">12 / 20</div>
+      <img src="galerie/poza12.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">13 / 20</div>
+      <img src="galerie/poza13.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">14 / 20</div>
+      <img src="galerie/poza14.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">15 / 20</div>
+      <img src="galerie/poza15.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">16 / 20</div>
+      <img src="galerie/poza16.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">17 / 20</div>
+      <img src="galerie/poza17.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">18 / 20</div>
+      <img src="galerie/poza18.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">19 / 20</div>
+      <img src="galerie/poza19.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">20 / 20</div>
+      <img src="galerie/poza20.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+	
+	 <div class="column">
+      <img class="demo cursor" src="galerie/poza1.jpg" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="galerie/poza2.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="galerie/poza3.jpg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="galerie/poza4.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="galerie/poza5.jpg" style="width:100%" onclick="currentSlide(5)">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="galerie/poza6.jpg" style="width:100%" onclick="currentSlide(6)">
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="galerie/poza7.jpg" style="width:100%" onclick="currentSlide(7)">
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="galerie/poza8.jpg" style="width:100%" onclick="currentSlide(8)">
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="galerie/poza9.jpg" style="width:100%" onclick="currentSlide(9)">
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="galerie/poza10.jpg" style="width:100%" onclick="currentSlide(10)">
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="galerie/poza11.jpg" style="width:100%" onclick="currentSlide(11)">
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="galerie/poza12.jpg" style="width:100%" onclick="currentSlide(12)">
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="galerie/poza13.jpg" style="width:100%" onclick="currentSlide(13)">
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="galerie/poza14.jpg" style="width:100%" onclick="currentSlide(14)">
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="galerie/poza15.jpg" style="width:100%" onclick="currentSlide(15)">
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="galerie/poza16.jpg" style="width:100%" onclick="currentSlide(16)">
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="galerie/poza17.jpg" style="width:100%" onclick="currentSlide(17)">
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="galerie/poza18.jpg" style="width:100%" onclick="currentSlide(18)">
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="galerie/poza19.jpg" style="width:100%" onclick="currentSlide(19)">
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="galerie/poza20.jpg" style="width:100%" onclick="currentSlide(20)">
+    </div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+</body>
+</html>
