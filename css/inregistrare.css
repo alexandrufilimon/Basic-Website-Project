@@ -1,0 +1,32 @@
+.formular{
+	text-align: center;
+	margin: 100px 300px 400px;
+}
+
+#inregistrare{
+	width: 100%;
+	background-color: #051019;
+	opacity: 0.8;
+	padding: 50px 50px;
+}
+
+#button{
+	width: 250px;
+	padding: 10px;
+	border-radius: 4px;
+	outline: 0px;
+}
+
+#butt{
+	width: 250px;
+	padding: 10px;
+	border-radius: 4px;
+	background-color: #0c6996;
+	border: 2px solid #01010c;
+	color: aliceblue;
+	font-size: 18px;
+}
+
+#login{
+	margin-left: 400px;
+}

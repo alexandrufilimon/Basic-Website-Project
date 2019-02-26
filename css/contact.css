@@ -1,0 +1,67 @@
+.header {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header h1 {
+	color: #fff;
+	font-size: 46px;
+}
+
+.header p {
+	color: #fff;
+	margin-bottom: 20px;
+	font-size:1.25vw;
+	
+}
+
+.form {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+input {
+	width: 100%;
+	margin: 40px 0;
+	background: rgba(0,0,0,0);
+	border: none;
+	border-bottom: 1px solid #EAEAEA;
+}
+
+#msj {
+	margin-top: 60px;
+	color: #EAEAEA;
+	font-size: 18px;
+}
+
+::-webkit-input-placeholder {
+	color: #EAEAEA;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+
+#nume , #email {
+	color: #EAEAEA;
+	font-size: 18px;
+}
+
+button {
+	padding: 20px 32px;
+	font-size: 16px;
+	background: #0078ff;
+	border: none;
+	border-radius: 4px;
+	margin-top: 30px;
+	color: #fff;
+	opacity: 0.95;
+}
+
+iframe {
+	margin-left: 1000px;
+    margin-top: 100px;
+}
