@@ -3,6 +3,7 @@
 
 # Motivation
 This is a basic website project made for a college seminar project proving the knowledge of using HTML, CSS and PHP.
+NO framework used.
 
 # Containing pages
 
